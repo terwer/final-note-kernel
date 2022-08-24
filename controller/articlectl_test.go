@@ -2,14 +2,13 @@ package controller
 
 import (
 	"fmt"
-	kernel "github.com/terwer/final-note-kernel"
-
 	"github.com/terwer/final-note-kernel/service"
+	"github.com/terwer/final-note-kernel/starter"
 	"testing"
 )
 
 func TestAddArticleAction(t *testing.T) {
-	kernel.Init()
+	starter.SetupConf()
 
 	// 主逻辑
 	service.ConnectDB()

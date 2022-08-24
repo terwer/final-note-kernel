@@ -1,4 +1,4 @@
-package final_note_kernel
+package starter
 
 import (
 	"fmt"
@@ -15,8 +15,8 @@ import (
 // Logger
 var logger *gulu.Logger
 
-// Init The only one init function in pipe.
-func Init() {
+// SetupConf The only one init function in pipe.
+func SetupConf() {
 	rand.Seed(time.Now().UTC().UnixNano())
 
 	gulu.Log.SetLevel("debug")
